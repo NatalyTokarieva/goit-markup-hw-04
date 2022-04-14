@@ -7,6 +7,7 @@
     --button-bg-color: #F5F4FA;
     --portfolio-bg-color: #E5E5E5;  
     --border-image: #EEEEEE; 
+    --icon-border:#AFB1B8;
     --bg-button-a: rgba(245, 244, 250, 1);
 }
 
@@ -135,32 +136,7 @@ h1, h2, h3, p {
     color: var(--accent-color);
     
     }
-.mail-item::before {
-    content: '';
-    display: inline-block;
-    background-image: url(../images/envelope.svg);
-    width: 16px;
-    height: 12px;
-    background-size: contain;
-    margin-right: 10px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.mail-item:hover::before{
-    color: var(--accent-color);
-}
 
-.tel-item::before {
-    content: '';
-    display: inline-block;
-    background-image:url(../images/smartphone.svg);
-    width: 10px;
-    height: 16px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-right: 10px;
-    background-position: center;
-}
     
  /*Main*/
 .hero{
@@ -445,4 +421,28 @@ h1, h2, h3, p {
 .footer-adress{
     margin-top: 20px;
 }
+/*.icon-clients{
 
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color:var(--title-text-color);
+}
+.icon{
+    padding: 0;
+    border: 1px solid var(--icon-border);
+    border-radius: 4px;
+ 
+    background-color: var(--button-text-color);
+    
+
+
+}
+.icon-first{
+    width: 172px;
+    height: 92px;
+    fill: var(--primery-text-color);
+}*/
