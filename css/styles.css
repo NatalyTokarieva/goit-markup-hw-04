@@ -9,6 +9,7 @@
     --border-image: #EEEEEE; 
     --icon-border:#AFB1B8;
     --bg-button-a: rgba(245, 244, 250, 1);
+    --footer-coloe: rgba(255, 255, 255, 0.1);
 }
 
 body{
@@ -295,27 +296,6 @@ h1, h2, h3, p {
     padding: 0;
    
 }
-/*.instagram-icon .instagram{
-    margin-right: 10px;
-    margin-bottom: 42px;
-    fill: var(--icon-border);
-}
-
-.instagram{
-    width: 44px;
-    height: 44px;
-    
-    background-color:var(--button-text-color);
-    border-radius: 50%;
-    border: none;
-}
-.instagram:hover{
-    background-color: var(--accent-color);
-    fill: var(--button-text-color);
-    border-radius:50%;
-    border:none;
-  
-}*/
 
 .instagram-item{
     width: 44px;
@@ -561,36 +541,29 @@ h1, h2, h3, p {
     cursor: pointer;
 
 }
-/*.instagram-item{
-    width: 44px;
-    height: 44px;
-    padding: 0;
-    background-color: var(--button-text-color);
-    border-radius: 50%;
-    border: none;
-    margin-bottom: 30px;
-    margin-right: 10px;
-    color: var(--icon-border);
-    padding: 12px;
-}
-.instagram-item:hover{
-    background-color: var(--accent-color);
-    color: var(--button-text-color);
-}
-.instagram{
-    fill: currentColor;
-    width: 20px;
-    height: 20px;
-    
-}*/
-.footer-icon{
+
+.footer-container{
     display: flex;
-
-
+    align-items: center;
+}
+.footer-icon{
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--button-text-color);
+    margin-bottom: 20px;
+    }
+    .mail-list .item:last-child{
+        display: flex;
+    }
+    .twitter-icon{
+        display: flex; 
+    }
+    .mail-logo{
+        margin-right: 156px;
+    }
+    .twitter{
+        background-color: var(--footer-coloe);
     }
