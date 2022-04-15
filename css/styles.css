@@ -136,6 +136,34 @@ h1, h2, h3, p {
     color: var(--accent-color);
     
     }
+.mail-icon{
+    display: flex;
+    align-items: center;
+}
+
+.envelope{
+    width: 16px;
+    height: 12px;
+    fill: var(--primery-text-color);
+    margin-right: 10px;
+    
+}
+.envelope:hover{
+    fill: var(--accent-color);
+}
+.phone-icon{
+    display: flex;
+    align-items: center;
+}
+.smartphone{
+    width: 10px;
+    height: 16px;
+    fill: var(--primery-text-color);
+    margin-right: 10px;
+}
+.smartphone:hover{
+    fill: var(--accent-color);
+}
 
     
  /*Main*/
@@ -288,6 +316,11 @@ h1, h2, h3, p {
      clip: rect(0 0 0 0); 
      overflow: hidden; 
 } 
+.our-icon{
+    width: 70px;
+    height: 70px;
+    background-color: var(--button-bg-color);
+}
 
 .title{
     font-weight: 700;
@@ -350,8 +383,11 @@ h1, h2, h3, p {
     width: 370px;
     margin-right: 30px;
     margin-bottom: 30px;
-  
-    
+}
+.picture-list .item:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+     0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
 
 }
 .picture-list .item:nth-child(3n){
@@ -421,7 +457,7 @@ h1, h2, h3, p {
 .footer-adress{
     margin-top: 20px;
 }
-/*.icon-clients{
+.icon-clients{
 
     font-weight: 700;
     font-size: 36px;
@@ -431,18 +467,36 @@ h1, h2, h3, p {
 
     color:var(--title-text-color);
 }
-.icon{
+.icon-list{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 50px;
+}
+.icon-list .item{
+    margin-right: 30px;
+    width: 170px;
+    height: 92px;
+}
+.icon-list .item:last-child{
+    margin-right: 0;
+}
+.icon-button{
     padding: 0;
-    border: 1px solid var(--icon-border);
+    border: 1px solid var(--border-image);
+    width: 170px;
+    height: 92px;
     border-radius: 4px;
- 
-    background-color: var(--button-text-color);
-    
-
-
+     background-color: var(--button-text-color); 
+     
+}
+.icon-first:hover{
+    fill: var(--accent-color);
 }
 .icon-first{
-    width: 172px;
-    height: 92px;
-    fill: var(--primery-text-color);
-}*/
+    width: 106px;
+    height: 60px;
+    fill: var(--icon-border);
+    cursor: pointer;
+
+}
