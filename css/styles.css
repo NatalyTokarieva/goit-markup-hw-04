@@ -138,23 +138,28 @@ h1, h2, h3, p {
     
     }
 .mail-icon{
-    display: flex;
+    display: inline-flex;
     align-items: center;
+    text-decoration: none;
+    color: var(--primery-text-color);
+}
+.mail-icon:hover{
+    fill: var(--accent-color);
+    stroke: var(--accent-color);
 }
 
 .envelope{
     width: 16px;
     height: 12px;
-    fill: var(--primery-text-color);
+    fill:currentColor;
     margin-right: 10px;
     
 }
-.envelope:hover{
-    fill: var(--accent-color);
-}
+
 .phone-icon{
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 .smartphone{
     width: 10px;
@@ -162,8 +167,9 @@ h1, h2, h3, p {
     fill: var(--primery-text-color);
     margin-right: 10px;
 }
-.smartphone:hover{
+.phone-icon:hover{
     fill: var(--accent-color);
+    stroke: var(--accent-color);
 }
 
     
@@ -237,7 +243,7 @@ h1, h2, h3, p {
     padding: 6px 22px;
     border-radius: 4px;
     border: 1px solid transparent;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   
  }
 
 .secondary-button:hover, 
@@ -288,13 +294,13 @@ h1, h2, h3, p {
 .commands-list .item:last-child{
     margin-right: 0;
 }
-
+.socials{
+    padding: 30px 32px;
+}
 .instagram-icon{
     display: flex;
     justify-content: center;
-    margin: 0;
-    padding: 0;
-   
+  
 }
 
 .instagram-item{
@@ -304,7 +310,6 @@ h1, h2, h3, p {
     background-color: var(--button-text-color);
     border-radius: 50%;
     border: none;
-    margin-bottom: 30px;
     margin-right: 10px;
     color: var(--icon-border);
     padding: 12px;
@@ -353,13 +358,19 @@ h1, h2, h3, p {
      overflow: hidden; 
 } 
 
-.our-icon{
+.clock-icon{
     width: 270px;
     height: 120px;
     border-radius: 4px;
     background-color: var(--button-bg-color);
-    padding: 25px 102px;
+    padding: 25px 100px;
     margin-bottom: 30px;
+}
+
+.icon{
+    width: 70px;
+    height: 70px;
+   fill: currentColor;
   
 }
 
@@ -387,7 +398,7 @@ h1, h2, h3, p {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
-    margin-top: 30px;
+    
     margin-bottom: 10px;
 
  }
@@ -425,7 +436,10 @@ h1, h2, h3, p {
     margin-right: 30px;
     margin-bottom: 30px;
 }
-.picture-list .item:hover{
+.filter-link{
+    display: block;
+}
+.filter-link:hover{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
      0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -498,6 +512,9 @@ h1, h2, h3, p {
 .footer-adress{
     margin-top: 20px;
 }
+
+
+
 .icon-clients{
 
     font-weight: 700;
@@ -522,29 +539,43 @@ h1, h2, h3, p {
 .icon-list .item:last-child{
     margin-right: 0;
 }
-.icon-button{
-    padding: 0;
-    border: 1px solid var(--border-image);
+
+.union-icon{
     width: 170px;
     height: 92px;
     border-radius: 4px;
      background-color: var(--button-text-color); 
+     border: 1px solid var(--border-image);
+     display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    padding: 16px 32px;
+
      
-}
-.icon-first:hover{
-    fill: var(--accent-color);
 }
 .icon-first{
     width: 106px;
     height: 60px;
     fill: var(--icon-border);
     cursor: pointer;
+ 
+
+
 
 }
+.icon-first:hover{
+    fill: var(--accent-color);
+}
+.union-icon:hover{
+    border: 1px solid var(--accent-color);
+    
+}
+
 
 .footer-container{
     display: flex;
-    align-items: center;
+    align-items: baseline;
 }
 .footer-icon{
     font-weight: 700;
@@ -562,7 +593,7 @@ h1, h2, h3, p {
         display: flex; 
     }
     .mail-logo{
-        margin-right: 156px;
+        margin-right: 70px;
     }
     .twitter{
         background-color: var(--footer-coloe);
