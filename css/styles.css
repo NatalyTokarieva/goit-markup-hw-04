@@ -43,7 +43,7 @@ h1, h2, h3, p {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    border: 1px solid var(--border-image);
+    border-bottom: 1px solid var(--border-image);
     }
  
 .header-inner{
@@ -363,14 +363,17 @@ h1, h2, h3, p {
     height: 120px;
     border-radius: 4px;
     background-color: var(--button-bg-color);
-    padding: 25px 100px;
+   /* padding: 25px 100px;*/
     margin-bottom: 30px;
+
 }
 
 .icon{
     width: 70px;
     height: 70px;
    fill: currentColor;
+   justify-content: center;
+    align-items: center;
   
 }
 
@@ -402,12 +405,16 @@ h1, h2, h3, p {
     margin-bottom: 10px;
 
  }
-
+.img-people{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 .section-commands p{
     color: var(--primery-text-color);
     font-size: 16px;
     line-height: 1.18;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
 }
 
 .title-filter {
