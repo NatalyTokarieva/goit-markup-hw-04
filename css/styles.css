@@ -359,11 +359,13 @@ h1, h2, h3, p {
 } 
 
 .clock-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 270px;
     height: 120px;
     border-radius: 4px;
     background-color: var(--button-bg-color);
-   /* padding: 25px 100px;*/
     margin-bottom: 30px;
 
 }
@@ -546,20 +548,18 @@ h1, h2, h3, p {
 .icon-list .item:last-child{
     margin-right: 0;
 }
-.union-icon{
+
+.icon-button{
     display: flex;
     flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;  
-}
-.icon-button{
     width: 170px;
     height: 92px;
     border-radius: 4px;
      background-color: var(--button-text-color); 
      border: 1px solid var(--border-image);
-   color: var(--icon-border);
-    padding: 16px 32px;
+    color: var(--icon-border);
+    align-content: center;
+    justify-content: center;  
 
      
 }
@@ -569,10 +569,13 @@ h1, h2, h3, p {
     fill: currentColor;
     cursor: pointer;
 }
-.icon-first:hover{
+
+.icon-first:hover,
+.icon-first:focus{
     fill: var(--accent-color);
 }
-.icon-button:hover{
+.icon-button:hover,
+.icon-button:focus{
     border: 1px solid var(--accent-color);
      fill: var(--accent-color);
 
