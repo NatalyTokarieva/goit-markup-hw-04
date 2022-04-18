@@ -568,16 +568,17 @@ h1, h2, h3, p {
     height: 60px;
     fill: currentColor;
     cursor: pointer;
+    border: none;
 }
 
 .icon-first:hover,
 .icon-first:focus{
     fill: var(--accent-color);
+   
 }
 .icon-button:hover,
 .icon-button:focus{
     border: 1px solid var(--accent-color);
-     fill: var(--accent-color);
 
 }
 
