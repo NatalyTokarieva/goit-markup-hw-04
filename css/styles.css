@@ -38,6 +38,11 @@ h1, h2, h3, p {
     margin-top: 0;
     margin-bottom: 0;
 }
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 
 .header-page{
     font-weight: 500;
@@ -144,8 +149,8 @@ h1, h2, h3, p {
     color: var(--primery-text-color);
 }
 .mail-icon:hover{
-    fill: var(--accent-color);
-    stroke: var(--accent-color);
+    color: var(--accent-color);
+    
 }
 
 .envelope{
@@ -160,17 +165,15 @@ h1, h2, h3, p {
     display: flex;
     align-items: center;
     text-decoration: none;
+    color: var(--primery-text-color);
 }
 .smartphone{
     width: 10px;
     height: 16px;
-    fill: var(--primery-text-color);
+    fill:currentColor;
     margin-right: 10px;
 }
-.phone-icon:hover{
-    fill: var(--accent-color);
-    stroke: var(--accent-color);
-}
+
 
     
  /*Main*/
@@ -311,7 +314,7 @@ h1, h2, h3, p {
     border-radius: 50%;
     border: none;
     margin-right: 10px;
-    color: var(--icon-border);
+    color:var(--button-text-color);
     padding: 12px;
 }
 .instagram-item:hover{
@@ -407,11 +410,11 @@ h1, h2, h3, p {
     margin-bottom: 10px;
 
  }
-.img-people{
+/*.img-people{
     display: block;
     max-width: 100%;
     height: auto;
-}
+}*/
 .section-commands p{
     color: var(--primery-text-color);
     font-size: 16px;
@@ -549,6 +552,7 @@ h1, h2, h3, p {
     margin-right: 0;
 }
 
+
 .icon-button{
     display: flex;
     flex-wrap: wrap;
@@ -563,24 +567,21 @@ h1, h2, h3, p {
 
      
 }
+.icon-button:hover,
+.icon-button:focus{
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+
+}
 .icon-first{
     width: 106px;
     height: 60px;
     fill: currentColor;
     cursor: pointer;
-    border: none;
+    
 }
 
-.icon-first:hover,
-.icon-first:focus{
-    fill: var(--accent-color);
-   
-}
-.icon-button:hover,
-.icon-button:focus{
-    border: 1px solid var(--accent-color);
 
-}
 
 .footer-container{
     display: flex;
