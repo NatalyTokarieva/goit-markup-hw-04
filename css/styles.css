@@ -314,7 +314,7 @@ img{
     border-radius: 50%;
     border: none;
     margin-right: 10px;
-    color:var(--button-text-color);
+    color:var(--icon-border);
     padding: 12px;
 }
 .instagram-item:hover{
@@ -326,6 +326,9 @@ img{
     width: 20px;
     height: 20px;
     
+}
+.twitter{
+    color: var(--button-text-color);
 }
 
 .section-commands{
